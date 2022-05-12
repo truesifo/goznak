@@ -1,0 +1,42 @@
+:host {
+    max-width: 100%;
+}
+
+/* DESC */
+@media screen and (min-width: 600px) {
+    .box {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 300px;
+    }
+
+    button:nth-child(2n) {
+        align-self: flex-start;
+    }
+
+    button:nth-child(2n+1) {
+        align-self: center;
+    }
+}
+
+/* MOB */
+@media screen and (max-width: 600px) {
+    .box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 300px;
+        width: 200px;
+        max-width: 100%;
+    }
+
+    button:nth-child(2n+1) {
+        align-self: flex-start;
+    }
+
+    button:nth-child(2n) {
+        align-self: flex-end;
+    }
+}
+
